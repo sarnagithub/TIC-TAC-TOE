@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyY4R_KGIscUBYzuIlfsK6IWeN89U8k_QczQ&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-container {
+    text-align: center;
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 0, 0));
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: solid black 5px;
+    box-shadow: 30px 30px 20px black;
+    backdrop-filter: blur(20px);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin: 15px;
+
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 10px 20px black;
+}
+
+.cell:hover {
+    background-color: #454545;
+    color: white;
+    border: white solid 3px;
+}
+
+#status {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#reset {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px black;
+}
+
+#reset:hover {
+    background-color: #313131;
+    color: #fff;
+}
+.score{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+    margin-bottom: 8px;
+}
